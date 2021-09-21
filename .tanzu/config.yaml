@@ -7,5 +7,13 @@ clientOptions:
     - gcpPluginRepository:
         bucketName: tanzu-cli-tkg-plugins
         name: tkg
+current: arcas-mgmt
 metadata:
   creationTimestamp: null
+servers:
+- managementClusterOpts:
+    context: arcas-mgmt-admin@arcas-mgmt
+    path: /root/.kube-tkg/config
+  name: arcas-mgmt
+  type: managementcluster
+
