@@ -1,0 +1,18 @@
+clientOptions:
+  cli:
+    repositories:
+    - gcpPluginRepository:
+        bucketName: tanzu-cli
+        name: core
+    - gcpPluginRepository:
+        bucketName: tanzu-cli-tkg-plugins
+        name: tkg
+current: tkgm-one
+metadata:
+  creationTimestamp: null
+servers:
+- managementClusterOpts:
+    context: tkgm-one-admin@tkgm-one
+    path: /root/.kube-tkg/config
+  name: tkgm-one
+  type: managementcluster
